@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobile Autoaufbereitung & Autoreinigung in Nürnberg. Wir kommen zu Ihnen nach Hause oder ins Büro.">
+    <title>InteriorGlanz | Mobile Autoaufbereitung Nürnberg</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons (CDN Version) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">Interior<span>Glanz</span></a>
+            
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#bevor-after">Ergebnisse</a></li>
+                <li><a href="#pricing">Preise</a></li>
+                <li><a href="#contact" class="btn-nav">0170 909 57 30</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content fade-in">
+            <div class="badge"><i data-lucide="map-pin"></i> 100% MOBIL IN NÜRNBERG</div>
+            <h1>Mobile Autoreinigung <br><span class="gold-text italic">Nürnberg</span></h1>
+            <p>Premium-Pflege direkt vor Ihrer Haustür. Wir bringen Wasser, Strom und Glanz zu Ihnen.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Termin anfragen</a>
+                <a href="#pricing" class="btn-secondary">Preise ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEFORE / AFTER SLIDER -->
+    <section id="bevor-after" class="py-100 bg-white">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Der Glanz-Effekt</h2>
+                <p>Verschieben Sie den Regler, um den Unterschied zu sehen.</p>
+            </div>
+
+            <div class="slider-container fade-in">
+                <div class="comparison-slider" id="comparison-slider">
+                    <img src="Bilder/lack_nachher.jpg" alt="Nachher" class="image-after">
+                    <div class="slider-before" id="slider-before">
+                        <img src="Bilder/lack_vorher.jpg" alt="Vorher" class="image-before">
+                    </div>
+                    <div class="slider-handle" id="slider-handle">
+                        <div class="handle-button"><i data-lucide="move-horizontal"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-100 bg-light">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Unsere Pakete</h2>
+            </div>
+            <div class="pricing-grid">
+                <!-- Paket 1 -->
+                <div class="price-card fade-in">
+                    <h3>Innenreinigung Basic</h3>
+                    <div class="price">59,90€</div>
+                    <ul>
+                        <li><i data-lucide="check"></i> Saugen & Abwischen</li>
+                        <li><i data-lucide="check"></i> Scheiben innen</li>
+                        <li><i data-lucide="check"></i> Einstiege reinigen</li>
+                    </ul>
+                    <a href="#contact" class="btn-card">Jetzt buchen</a>
+                </div>
+                <!-- Paket 2 -->
+                <div class="price-card featured fade-in">
+                    <div class="popular-badge">Bestseller</div>
+                    <h3>Komplettpaket Deluxe</h3>
+                    <div class="price">249€</div>
+                    <ul>
+                        <li><i data-lucide="check"></i> Innenreinigung Profi</li>
+                        <li><i data-lucide="check"></i> Außenwäsche Hand</li>
+                        <li><i data-lucide="check"></i> Lackversiegelung</li>
+                        <li><i data-lucide="check"></i> Polsterreinigung</li>
+                    </ul>
+                    <a href="#contact" class="btn-primary">Wunschtermin sichern</a>
+                </div>
+                <!-- Paket 3 -->
+                <div class="price-card fade-in">
+                    <h3>Außenwäsche Deluxe</h3>
+                    <div class="price">149€</div>
+                    <ul>
+                        <li><i data-lucide="check"></i> pH-neutrale Handwäsche</li>
+                        <li><i data-lucide="check"></i> Felgen-Tiefenreinigung</li>
+                        <li><i data-lucide="check"></i> Insektenentfernung</li>
+                    </ul>
+                    <a href="#contact" class="btn-card">Jetzt buchen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-100 bg-white">
+        <div class="container small-container">
+            <div class="section-title">
+                <h2>Häufige Fragen</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">Brauche ich Strom oder Wasser vor Ort? <i data-lucide="plus"></i></button>
+                    <div class="faq-answer"><p>Nein, unser Service-Fahrzeug ist komplett autark ausgestattet mit eigenem Wassertank und Stromversorgung.</p></div>
+                </div>
+                <div class="faq-item fade-in">
+                    <button class="faq-question">Wie lange dauert eine Reinigung? <i data-lucide="plus"></i></button>
+                    <div class="faq-answer"><p>Je nach Paket zwischen 2 und 6 Stunden. Wir arbeiten gründlich und detailverliebt.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-100 bg-dark text-white">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h2>Lust auf ein <span class="gold-text">neues Auto?</span></h2>
+                    <p>Schreiben Sie uns. Wir antworten innerhalb von 2 Stunden.</p>
+                    <div class="contact-details">
+                        <p><i data-lucide="phone" class="gold-text"></i> 0170 909 57 30</p>
+                        <p><i data-lucide="mail" class="gold-text"></i> info@interiorglanz.de</p>
+                    </div>
+                    <div id="urgency-msg" class="urgency-box"></div>
+                </div>
+                
+                <form class="contact-form fade-in" id="bookingForm">
+                    <div class="input-group">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="E-Mail" required>
+                    </div>
+                    <select required>
+                        <option value="">Paket wählen...</option>
+                        <option>Innenreinigung Basic</option>
+                        <option>Komplettpaket Deluxe</option>
+                        <option>Außenwäsche Deluxe</option>
+                    </select>
+                    <textarea placeholder="Nachricht oder Fahrzeugmodell" rows="5"></textarea>
+                    <button type="submit" class="btn-primary full-width">Anfrage absenden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 InteriorGlanz Nürnberg. <a href="#">Impressum</a> | <a href="#">Datenschutz</a></p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
